@@ -1,33 +1,76 @@
 :root {
-  --tds-nav-item--color: #fff;
+  --main-color: #fff;
+}
+/* Hide Scrollbar */
+body::-webkit-scrollbar {
+  display: none;
+}
+/* font family */
+@font-face {
+  font-family: GothamBold;
+  src: url("/Font-famliy/Gotham-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: GothamBook;
+  src: url("/Font-famliy/GothamBook.ttf") format("TrueType");
+}
+@font-face {
+  font-family: GothamL;
+  src: url("/Font-famliy/Gotham-Light.otf") format("opentype");
+  font-weight: 900;
+}
+/* font for everyone */
+body {
+  font-family: GothamBook, "Arial Narrow", Arial, sans-serif;
 }
 header {
   width: 100%;
   position: fixed;
   z-index: 2;
   top: 0;
+  color: var(--main-color);
   padding: 5px 20px;
   display: flex;
   justify-content: space-evenly;
+  font-size: 14px;
 }
 header nav.center {
+  margin: 0 8px;
+  padding: 0 8px;
   flex: 1;
   text-align: center;
+}
+.main-color {
+  color: var(--main-color);
 }
 header nav.right {
   text-align: right;
 }
+.right {
+  padding: 0 32px 0 0;
+}
+.name {
+  margin: 0 0 0 0;
+  padding: 150px 24px;
+  font-size: 40px;
+  text-align: center;
+}
+.center {
+  padding: 0 8px;
+}
 .logo {
+  padding: 0 0 0 32px;
   text-align: left;
 }
 a.logo svg {
   height: 12px;
   width: 100px;
-  /* color: var(--tds-nav-item--color); */
+  color: var(--main-color);
 }
 header nav a {
   text-decoration: none;
   padding: 5px 10px;
+  color: var(--main-color);
 }
 .desktop {
   display: none;
@@ -36,4 +79,22 @@ header nav a {
   .desktop {
     display: initial;
   }
+}
+section {
+  height: 100vh;
+}
+section.model-3 {
+  background: url(/images/model-3.jpg) no-repeat center center/cover;
+  background-position: center -70px;
+  background-size: cover;
+}
+section.model-4 {
+  background: url(/images/model-4.jpg) no-repeat center center/cover;
+  background-position: center 0;
+  background-size: cover;
+}
+section.model-5 {
+  background: url(/images/model-5.jpg) no-repeat center center/cover;
+  background-position: center 0;
+  background-size: cover;
 }
