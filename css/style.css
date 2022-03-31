@@ -1,0 +1,39 @@
+:root {
+  --tds-nav-item--color: #fff;
+}
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+header nav.center {
+  flex: 1;
+  text-align: center;
+}
+header nav.right {
+  text-align: right;
+}
+.logo {
+  text-align: left;
+}
+a.logo svg {
+  height: 12px;
+  width: 100px;
+  /* color: var(--tds-nav-item--color); */
+}
+header nav a {
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.desktop {
+  display: none;
+}
+@media (min-width: 768px) {
+  .desktop {
+    display: initial;
+  }
+}
