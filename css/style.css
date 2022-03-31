@@ -23,6 +23,9 @@ body::-webkit-scrollbar {
 body {
   font-family: GothamBook, "Arial Narrow", Arial, sans-serif;
 }
+.main-color {
+  color: var(--main-color);
+}
 header {
   width: 100%;
   position: fixed;
@@ -35,36 +38,39 @@ header {
   font-size: 14px;
 }
 header nav.center {
-  margin: 0 8px;
-  padding: 0 8px;
+  text-transform: capitalize;
+  width: 615px;
+  height: 56px;
+  font-size: 14px;
+  padding: 14px;
+  margin-left: 28px;
+  font-family: Gothambold, "Arial Narrow", Arial, sans-serif;
   flex: 1;
   text-align: center;
 }
-.main-color {
-  color: var(--main-color);
-}
+
 header nav.right {
+  text-transform: capitalize;
+  font-family: Gothambold, "Arial Narrow", Arial, sans-serif;
+  font-size: 14px;
   text-align: right;
+  margin-right: 58px;
+  padding: 14px;
 }
-.right {
-  padding: 0 32px 0 0;
+.logo {
+  margin-left: 28px;
+  margin-top: 13px;
+  text-align: left;
 }
 .name {
   margin: 0 0 0 0;
-  padding: 150px 24px;
+  padding: 158px 0 0 0;
   font-size: 40px;
   text-align: center;
 }
-.center {
-  padding: 0 8px;
-}
-.logo {
-  padding: 0 0 0 32px;
-  text-align: left;
-}
 a.logo svg {
-  height: 12px;
-  width: 100px;
+  width: 120px;
+  height: 20px;
   color: var(--main-color);
 }
 header nav a {
@@ -75,17 +81,12 @@ header nav a {
 .desktop {
   display: none;
 }
-@media (min-width: 768px) {
-  .desktop {
-    display: initial;
-  }
-}
 section {
   height: 100vh;
 }
 section.model-3 {
   background: url(/images/model-3.jpg) no-repeat center center/cover;
-  background-position: center -70px;
+  background-position: center -73px;
   background-size: cover;
 }
 section.model-4 {
@@ -97,4 +98,10 @@ section.model-5 {
   background: url(/images/model-5.jpg) no-repeat center center/cover;
   background-position: center 0;
   background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .desktop {
+    display: initial;
+  }
 }
