@@ -1,6 +1,10 @@
 :root {
   --main-color: #fff;
 }
+* {
+  padding: 0;
+  margin: 0;
+}
 /* Hide Scrollbar */
 body::-webkit-scrollbar {
   display: none;
@@ -107,13 +111,44 @@ section.model-5 {
   border: 3px var(--main-color) solid;
   border-radius: calc(40px / 2);
   background-color: transparent;
+  padding: 4px 24px;
+  margin: 0 0 0 8px;
 }
-.btn-1 {
-  position: absolute;
-  right: 517px;
-  bottom: 96px;
+.tc {
+  padding-top: 60vh;
+  display: flex;
+  width: 100%;
+  height: 54px;
+  color: white;
+  align-items: center;
+  justify-content: center;
 }
-
+.tc h2 {
+  text-align: center;
+  height: 28px;
+  font-size: 28px;
+}
+.tc1,
+.tc2,
+.tc3 {
+  padding: 0 30px;
+}
+.tc1 h2 {
+  display: inline;
+}
+.tc p {
+  height: 26px;
+  padding: 8px 0 0;
+  font-size: 18px;
+}
+.speedometer {
+  display: inline-block;
+  width: 40px;
+  height: 21px;
+}
+.speedometer2 {
+  opacity: 0.4;
+}
 @media (min-width: 768px) {
   .desktop {
     display: initial;
