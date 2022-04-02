@@ -205,6 +205,9 @@ button {
   display: flex;
   align-items: flex-end;
 }
+.s2-right a {
+  color: var(--second-color);
+}
 .btn-2 {
   border: 3px var(--second-color) solid;
   margin-bottom: 5px;
@@ -288,6 +291,10 @@ button {
   box-shadow: 0 0 3px 1px gray;
   border-radius: 50%;
 }
+.container {
+  display: flex;
+  justify-content: center;
+}
 /* hover */
 .btn-2:hover {
   background-color: black;
@@ -311,7 +318,82 @@ header nav a:hover {
 .second-color .sidebar a:hover {
   color: var(--second-color);
 }
-@media screen and (max-width: 528px) {
+@media screen and (max-width: 1023px) {
+  .sidebar {
+    display: none;
+  }
+  .model-3 h2,
+  .model-5 h2 {
+    font-size: 20px;
+  }
+  .model-3 p {
+    font-size: 10px;
+  }
+  .tc {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+  .tc1,
+  .tc2,
+  .tc3 {
+    padding: 0 12px;
+  }
+  .model-3 .btn-1 {
+    width: 50%;
+  }
+  .model-4 {
+    flex-direction: column;
+    order: -1;
+  }
+  .button {
+    height: 20%;
+  }
+  .model-5 {
+    height: 57.5%;
+  }
+  .model-5 p {
+    display: none;
+  }
+  .tclastepage {
+    flex-direction: row;
+    align-items: flex-end;
+    padding-bottom: 40px;
+  }
+  .tclastepage .tc1 {
+    padding-bottom: 5px;
+  }
+  .page3bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px 0 0 20px;
+  }
+  .page3bottomright {
+    width: 80%;
+  }
+  .page3bottomleft {
+    width: 90vw;
+  }
+  .page3bottomleft p {
+    width: 90vw;
+  }
+  .page3btns {
+    padding-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .s2-right {
+    width: 100%;
+  }
+  .s2-right .tds {
+    width: 100%;
+  }
+  .btn-3 {
+    width: 20%;
+  }
+  .button {
+    height: 5%;
+  }
 }
 @media (min-width: 1024px) {
   .desktop {
