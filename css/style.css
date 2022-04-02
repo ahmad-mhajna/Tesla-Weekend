@@ -380,6 +380,9 @@ header nav a:hover {
   .page3btns {
     padding-top: 30px;
   }
+  .chat-icon {
+    right: 5%;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .s2-right {
@@ -394,9 +397,17 @@ header nav a:hover {
   .button {
     height: 5%;
   }
+  .chat-icon {
+    display: none;
+  }
 }
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .desktop {
-    display: unset;
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mobile {
+    display: none;
   }
 }
