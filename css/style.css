@@ -51,7 +51,7 @@ header {
   font-size: 14px;
 }
 .sidebar {
-  width: 140px;
+  width: 210px;
   height: 256px;
   display: flex;
   flex-direction: column;
@@ -200,8 +200,8 @@ button {
   font-size: 28px;
 }
 .button {
-  height: 526.97px;
-  width: 336px;
+  height: 65%;
+  width: 100%;
   display: flex;
   align-items: flex-end;
 }
@@ -212,9 +212,8 @@ button {
 .btn-3 {
   font-size: 12px;
   display: flex;
-  width: 50%;
+  width: 60%;
   height: 50px;
-  margin: 0 12px 0 0;
   align-items: center;
   background-color: transparent;
   border: 0ch;
@@ -234,11 +233,6 @@ button {
   justify-content: center;
   transition: color 0.3s ease;
 }
-/* s3 */
-section.model-5 {
-  background: url(/images/model-5.jpg) no-repeat center center/cover;
-  scroll-snap-align: center;
-}
 .tds {
   width: 336px;
   height: 240px;
@@ -247,7 +241,53 @@ section.model-5 {
   width: 124px;
   height: 16px;
 }
-
+/* s3 */
+.model-5 {
+  width: 100%;
+  height: 77.5%;
+  background: url(/images/model-5.jpg) no-repeat center center/cover;
+}
+.tclastepage {
+  text-align: center;
+  height: 58.2%;
+}
+.tclastepage p {
+  width: 272px;
+  height: 62px;
+  font-size: 12px;
+}
+.page3bottom {
+  width: 100%;
+  height: 23.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page3btns {
+  display: flex;
+}
+.page3btns .btn-3 {
+  width: fit-content;
+}
+.page3bottomright {
+  width: 30%;
+}
+.page3bottomleft {
+  width: 668px;
+  height: 80px;
+  color: var(--second-color);
+  font: 14px;
+}
+.chat-icon {
+  position: fixed;
+  right: 2.5%;
+  bottom: 8%;
+  padding: 12px;
+  padding-bottom: 8px;
+  background-color: white;
+  box-shadow: 0 0 3px 1px gray;
+  border-radius: 50%;
+}
 /* hover */
 .btn-2:hover {
   background-color: black;
@@ -268,8 +308,13 @@ header nav a:hover {
 .sidebar a:hover {
   color: white;
 }
-@media (min-width: 768px) {
+.second-color .sidebar a:hover {
+  color: var(--second-color);
+}
+@media screen and (max-width: 528px) {
+}
+@media (min-width: 1024px) {
   .desktop {
-    display: initial;
+    display: unset;
   }
 }
