@@ -46,7 +46,7 @@ header {
   justify-content: space-evenly;
   font-size: 14px;
 }
-header nav.center {
+header nav.centerbar {
   text-transform: capitalize;
   width: 615px;
   height: 56px;
@@ -58,7 +58,7 @@ header nav.center {
   text-align: center;
 }
 
-header nav.right {
+header nav.rightbar {
   text-transform: capitalize;
   font-family: Gothambold, "Arial Narrow", Arial, sans-serif;
   font-size: 14px;
@@ -208,6 +208,8 @@ button {
   justify-content: center;
   transition: color 0.3s ease;
 }
+/* s3 */
+
 /* hover */
 .btn-2:hover {
   background-color: black;
